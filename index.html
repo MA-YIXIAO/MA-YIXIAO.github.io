@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yixiao</title>
+  <style>
+       h2 {
+      text-decoration: underline;
+    }
+
+    h3 {
+      text-decoration: underline;
+    }
+  .content {
+      display: none;
+    }
+
+  .sub-content {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+<p>I am ready to pursue a PhD
+
+    The purpose of creating this page is to have a larger space to express myself and share my views on pursuing a PhD.</p>
+  <h2 onclick="toggleContent(this)">I have a strong passion for continuing research as a PhD student</h2>
+  <div class="content">
+    People are not inherently destined to do research, but they are inherently driven to continually explore the world.
+    There are various ways to explore the world, and I tend to choose the path of scientific research. Even before undergoing any formal research training, I instinctively used the method of controlling variables to investigate why the stewed meat was not juicy; recognizing the generality and specificity of problems has been a smooth process for me since childhood. I am unwilling to simply accept answers that are given to me, and I always want to explore by myself, to satisfy my curiosity. This is not a disciplinary requirement for me, but more like a habit of life. Therefore, I knew I would undergo training to gain the qualifications to conduct independent research at some point in my life. I want to discover new knowledge and promote technological progress through my own efforts; this is a process I can achieve self-realization.
+  </div>
+
+  <h2 onclick="toggleParentContent(this)">I learned how to do research through past research experiences</h2>
+  <div class="content">
+    <p>这是标题 1 之前的文本。</p>
+    <h3 onclick="toggleSubContent(this)">二级标题 1</h3>
+    <div class="sub-content">
+        esearch, but they are inherently driven to continually explore the world.
+        There are various ways to explore the world, and I 
+    </div>
+    <h3 onclick="toggleSubContent(this)">二级标题 2</h3>
+    <div class="sub-content">
+        esearch, but they are inherently driven to continually explore the world.
+        There are various ways to explore the world, and I 
+    </div>
+    <h3 onclick="toggleSubContent(this)">二级标题 3</h3>
+    <div class="sub-content">
+        esearch, but they are inherently driven to continually explore the world.
+        There are various ways to explore the world, and I 
+    </div>
+  </div>
+
+  <h2 onclick="toggleContent(this)">标题 3</h2>
+  <div class="content">
+    <p>is far from enough just having the passion to do research; I think I also need to know how to do research - And this can only be discovered through practice. I must first engage in the research to understand what it is like, to know if I am capable, and to identify aspects where I need to learn and improve. Therefore, I have been actively seeking opportunities to do research.</p> 
+    <p>When I was in college, it seemed that no lab was recruiting undergraduates due to a lack of members. However, I took the initiative to ask professors if there were opportunities to get involved. Eventually, I joined a research group studying the anticancer effects of plant extracts. After some basic training, I independently generated a bit of useful data.
+    </p>
+    <p>When I entered graduate school, I was very clear from the start that I wanted to find opportunities in the lab, but things did not go as planned. Due to initial language barriers and the subsequent pandemic issue, I was unable to engage in research and even failed to get to know many professors and students in my own department. After the pandemic, I proactively introduced myself to professors and finally got the chance to work on some protein extraction and crystallization for structural determination before graduation.</p>
+  </div>
+  <h2 onclick="toggleContent(this)">标题 4</h2>
+  <div class="content">
+    这是标题 4 对应的文本内容。
+  </div>
+  <script>
+    function toggleContent(element) {
+      var nextElement = element.nextElementSibling;
+      if (nextElement.style.display === 'none') {
+        nextElement.style.display = 'block';
+      } else {
+        nextElement.style.display = 'none';
+      }
+    }
+
+    function toggleParentContent(element) {
+      toggleContent(element);
+    }
+
+    function toggleSubContent(element) {
+      var nextElement = element.nextElementSibling;
+      if (nextElement.style.display === 'none') {
+        nextElement.style.display = 'block';
+      } else {
+        nextElement.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+
+</html>
